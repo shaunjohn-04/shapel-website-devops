@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: static-website
-        image: shaunjohnmathew/static-website:replaceImageTag
+        image: shaunjohnmathew/static-website:1
         ports:
         - containerPort: 80
         resources:

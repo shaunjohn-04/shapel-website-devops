@@ -4,9 +4,9 @@ metadata:
   name: static-website-service
 spec:
   type: NodePort
-  ports:
-  - port: 80
-    targetPort: 80
-    nodePort: 30080
   selector:
     app: static-website
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 30081

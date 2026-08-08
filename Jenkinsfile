@@ -4,7 +4,7 @@ pipeline {
     stage('Checkout') {
       steps {
         sh 'echo "checkout successfull"'
-        //git branch: 'main', url: 'https://github.com/Doom710/hosting_test'
+        //git branch: 'main', url: 'https://github.com/shaunjohn-04/shapel-website-devops'
       }
     }
 
@@ -46,7 +46,7 @@ pipeline {
 
    stage('Update Deployment File') {
         environment {
-            GIT_REPO_NAME = "hosting_test"
+            GIT_REPO_NAME = "shapel-website-devops"
             GIT_USER_NAME = "shaunjohn-04"
         }
         steps {
